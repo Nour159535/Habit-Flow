@@ -1,0 +1,50 @@
+.handle-key-down{
+  position: fixed;
+  background: #B9D9CD;
+  border-radius: 8px;
+}
+.edit-delete-dropdown{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 20px;
+}
+.edit-delete-dropdown .handle-edit-btn{
+  background: var(--btn-color);
+  padding: 5px 15px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Inter';
+  width: 100%;
+  cursor: pointer;
+}
+.edit-delete-dropdown .handle-toggle-btn{
+  background: var(--heading-color);
+  padding: 5px 15px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Inter';
+  width: 100%;
+  cursor: pointer;
+}
+.edit-delete-dropdown .handle-delete-btn{
+  background: rgb(227, 64, 64);
+  padding: 5px 15px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Inter';
+  width: 100%;
+  cursor: pointer;
+}

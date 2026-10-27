@@ -1,0 +1,36 @@
+.workplace{
+    background: var(--bg-workplace);
+    padding: 20px;
+}
+.welcome-date-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.daily-picture{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.quick-stats{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quick-stats .daily{
+  color: var(--paragraphs-color);
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+} 
+.quick-stats .stats{
+  color: var(--paragraphs-color);
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+.add-habit-section{
+  display: grid;
+  grid-template-columns: 65% 30%;
+  justify-content: space-between;
+} 

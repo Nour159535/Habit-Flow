@@ -1,0 +1,14 @@
+:root{
+    --bg-color: #FAF9F5;
+    --bg-sidebar: #F0F1E9;
+    --heading-color: #273C35;
+    --paragraphs-color: #78817A;
+    --sec-color-text: #7964A4;
+    --btn-color: #168364;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: var(--bg-color);
+}

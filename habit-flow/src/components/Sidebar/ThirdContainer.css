@@ -1,0 +1,12 @@
+.daily-note h3{
+  color: var(--heading-color);
+  font-size: 16px;
+  font-family: 'Lora', sans-serif;
+  font-weight: 500;
+}
+.daily-note p{
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  color: var(--paragraphs-color);
+  font-weight: 400;
+}

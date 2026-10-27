@@ -1,0 +1,21 @@
+.guest-account{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+.guest-content h4{
+  line-height: 0.2em;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+.guest-content p{
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: var(--paragraphs-color);
+}
