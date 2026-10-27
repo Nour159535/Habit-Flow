@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import dayjs from "dayjs";
 import './AddHabitForm.css';
 
 function AddHabitForm({ habits, setHabits, icons }) {
@@ -11,6 +12,7 @@ function AddHabitForm({ habits, setHabits, icons }) {
     const habitExists = habits.some((habit) => {
         return habit.name.trim().toLowerCase() === habitName.trim().toLowerCase();
     });
+    const today = dayjs().format("YYYY-MM-DD");
 
     function handleHabitName(event) {
         setHabitName(event.target.value);
@@ -49,7 +51,8 @@ function AddHabitForm({ habits, setHabits, icons }) {
                 name: habitName,
                 icon: habitIcon,
                 type: habitType,
-                status: habitStatus
+                status: habitStatus,
+                completedDates: habitStatus === 'Completed' ? [today] : []
             }
         ]);
 
@@ -81,7 +84,6 @@ function AddHabitForm({ habits, setHabits, icons }) {
     }
 
     useEffect(() => {
-        if (habits.id === null) return;
 
         function handleKeyCancel(event) {
             if (event.key === 'Escape' || event.target === event.currentTarget) {

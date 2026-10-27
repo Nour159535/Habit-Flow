@@ -1,7 +1,10 @@
+import dayjs from 'dayjs';
 import './AddHabits.css';
 import EditDeleteHabit from '../EditDeleteHabit/EditDeleteHabit';
 
 function AddHabit({ habits, setHabits, icons }) {
+    
+    const today = dayjs().format("YYYY-MM-DD");
 
     function changeHabitStatus(habitId) {
         setHabits(
@@ -9,7 +12,9 @@ function AddHabit({ habits, setHabits, icons }) {
                 if(habit.id === habitId){
                     return {
                         ...habit,
-                        status: habit.status === 'Completed' ? 'Pending' :'Completed'
+                        status: habit.status === 'Completed' ? 'Pending' :'Completed',
+                        completedDates : habit.status === 'Completed' ? habit.completedDates.filter((date)=> date !== today)
+                        : habit.completedDates.includes(today) ? habit.completedDates : [...habit.completedDates, today]
                     };
                 }
                 return habit;

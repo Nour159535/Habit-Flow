@@ -1,7 +1,15 @@
+.container-ref{
+  position: relative;
+}
 .handle-key-down{
-  position: fixed;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 9999;
   background: #B9D9CD;
   border-radius: 8px;
+  width: max-content;
+  margin-top: 10px;
 }
 .edit-delete-dropdown{
   display: flex;

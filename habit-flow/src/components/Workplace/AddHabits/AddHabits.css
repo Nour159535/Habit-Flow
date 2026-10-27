@@ -7,12 +7,6 @@
   border-radius: 8px;
   padding: 20px;
   border: 1px solid #E3E6DD;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
-.add-habit::-webkit-scrollbar{
-  color: var(--paragraphs-color);
-  border-radius: 16px;
 }
 .add-habit .habit-container{
   display: flex;

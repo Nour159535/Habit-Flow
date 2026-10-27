@@ -1,37 +1,42 @@
-.sidebar{
-    background: var(--bg-sidebar);
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+.sidebar {
+  background: var(--bg-sidebar);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
-.first-container{
+
+.first-container {
   display: flex;
   flex-direction: column;
   gap: 0;
 }
-.habit-flow-logo{
+
+.habit-flow-logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
   padding: 0;
 }
-.habit-flow-logo h3{
+
+.habit-flow-logo h3 {
   font-size: 21px;
   font-family: 'Inter';
   font-weight: 400;
   color: var(--heading-color);
   line-height: 1.3em;
 }
-.first-container p{
+
+.first-container p {
   font-family: 'Inter';
   font-size: 12px;
   font-weight: 400;
   color: var(--paragraphs-color);
   margin-top: -5px;
 }
-.second-container{
+
+.second-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -39,7 +44,8 @@
   align-content: flex-start;
   margin-top: 20px;
 }
-.second-container h3{
+
+.second-container h3 {
   line-height: 1.3em;
   color: var(--heading-color);
   font-family: 'Inter';
@@ -47,7 +53,8 @@
   font-weight: 500;
   text-transform: uppercase;
 }
-.third-container{
+
+.third-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

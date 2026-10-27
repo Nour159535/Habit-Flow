@@ -14,6 +14,8 @@
     background: #EAF2EA;
     padding: 20px;
     border-radius: 8px;
+    width: 350px;
+    height: 120px;
 }
 
 .progress-circle {
@@ -75,10 +77,12 @@
 }
 
 .current-streak {
-    padding: 20px;
+    padding: 15px;
     background: #FFFEFB;
     border: 1px solid #E3E6DD;
     border-radius: 8px;
+    width: 220px;
+    height: 120px;
 }
 
 .current-streak .streak-icon {
@@ -86,7 +90,121 @@
     justify-content: space-between;
     align-items: center;
 }
-@media(max-width: 480px){
+
+.streak-icon .current-content {
+    color: var(--paragraphs-color);
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.streak-day {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    gap: 5px;
+}
+
+.streak-day p {
+    color: var(--heading-color);
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+}
+
+.streak-day span {
+    color: var(--paragraphs-color);
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.current-streak .small-note {
+    color: var(--btn-color);
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.this-week {
+    padding: 15px;
+    background: #FFFEFB;
+    border: 1px solid #E3E6DD;
+    border-radius: 8px;
+    width: 220px;
+    height: 120px;
+}
+
+.this-week .week-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.this-week .week-content {
+    color: var(--paragraphs-color);
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.total-habit-achieve {
+    color: var(--heading-color);
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+}
+
+.habits-completed {
+    color: #7964A4;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 11px;
+    margin: 10px 0;
+}
+.success-rate {
+    padding: 15px;
+    background: #FFFEFB;
+    border: 1px solid #E3E6DD;
+    border-radius: 8px;
+    width: 220px;
+    height: 120px;
+}
+
+.success-rate .success-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.success-rate .success-content {
+    color: var(--paragraphs-color);
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.success-achive {
+    color: var(--heading-color);
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+}
+
+.success-p{
+    color: var(--btn-color);
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 11px;
+    margin: 10px 0;
+}
+
+@media(max-width: 480px) {
     .progress-circle {
         width: 82px;
     }
