@@ -2,7 +2,7 @@ import { useState } from 'react';
 import dayjs from 'dayjs';
 import './HabitCalendar.css';
 
-function HabitCalendar() {
+function HabitCalendar({habits}) {
     const [currentDate, setCurrentDate] = useState(dayjs());
     const [selectedDate, setSelectedDate] = useState(dayjs());
 
@@ -20,7 +20,9 @@ function HabitCalendar() {
     const emptyDays = Array.from({
         length: firstWeekday
 });
-
+    const completedDates = habits.flatMap((habit)=>{
+          return habit.completedDates;
+    });
 
     return (
         <div className="habit-calendar">
@@ -62,7 +64,7 @@ function HabitCalendar() {
                     const isSelected =
                         selectedDate.format("YYYY-MM-DD") ===
                         currentDate.date(day).format("YYYY-MM-DD");
-
+                    const hasAchievement = completedDates.includes(currentDate.date(day).format("YYYY-MM-DD"));
                     return (
                         <button
                             className={`calendar-day ${isSelected ? "selected" : ""}`}
@@ -70,7 +72,9 @@ function HabitCalendar() {
                             onClick={() => setSelectedDate(currentDate.date(day))}
                         >
                             <span>{day}</span>
-                            <span className="activity-dot" />
+                           {hasAchievement &&
+                              <span className="activity-dot"></span>
+                           }
                         </button>
                     );
                 })}

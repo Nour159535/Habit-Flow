@@ -93,7 +93,7 @@ function Workplace() {
                     <FilterHabits habits={habits} setHabits={setHabits} icons={icons} />
                 </div>
                 <div className="habit-calendar-and-note">
-                    <HabitCalendar />
+                    <HabitCalendar habits={habits}/>
                     <TakeNote />
                 </div>
             </div>
