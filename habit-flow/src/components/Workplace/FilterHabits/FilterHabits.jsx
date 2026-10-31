@@ -2,7 +2,7 @@ import { useState } from 'react';
 import AddHabit from '../AddHabits/AddHabit';
 import './FilterHabits.css';
 
-function FilterHabits({habits, setHabits, icons}){
+function FilterHabits({habits, setHabits, icons, isSearching}){
     const [filter, setFilter] = useState('All');
     
     const filteredHabits = filter === 'All' ? habits : filter === 'Completed' ?
@@ -21,7 +21,7 @@ function FilterHabits({habits, setHabits, icons}){
             <button className={filter === 'Completed' ? 'active-btn' : 'filter-btn'} onClick={()=>{setFilter('Completed')}}>Completed ({completedCount})</button>
             <button className={filter === 'Pending'  ? 'active-btn' : 'filter-btn'} onClick={()=>{setFilter('Pending')}}>Pending ({pendingCount})</button>
           </div>
-          <AddHabit habits={filteredHabits} setHabits={setHabits} icons={icons}/>
+          <AddHabit isSearching={isSearching} habits={filteredHabits} setHabits={setHabits} icons={icons}/>
           </>
     );
 }

@@ -2,7 +2,7 @@ import dayjs from 'dayjs';
 import './AddHabits.css';
 import EditDeleteHabit from '../EditDeleteHabit/EditDeleteHabit';
 
-function AddHabit({ habits, setHabits, icons }) {
+function AddHabit({ habits, setHabits, icons, isSearching }) {
     
     const today = dayjs().format("YYYY-MM-DD");
 
@@ -24,9 +24,11 @@ function AddHabit({ habits, setHabits, icons }) {
 
     return (
         <div className="add-habit">
-            
+            {isSearching && habits.length === 0 && (
+                <p className="no-habits-message">No habits found with this name.</p>
+            )}
             {habits.map((habit) => {
-
+                
                 const selectedIcon = icons.find((icon) => {
                     return icon.id === habit.icon;
                 });

@@ -46,7 +46,6 @@ function Habits({habits, setHabits}) {
         return searchHabits;
     }
     
-    const searchHabit = filteredHabitsSearch(searchTerm);
    
     return (
         <div className="workplace">
@@ -57,10 +56,7 @@ function Habits({habits, setHabits}) {
                 <div className="habits-container">
                     <AddHabitForm habits={habits} setHabits={setHabits} icons={icons} />
                      <input className="search-input" type="search" name="search" id="search" placeholder="Search for a habit" value={searchTerm} onChange={changeSearch}/>
-                     {searchTerm.trim() !== "" && searchHabit.length === 0 && (
-                        <p className="no-habits-message">No habits found with this name.</p>
-                    )}
-                    <FilterHabits filteredHabitsSearch={filteredHabitsSearch(searchTerm)} habits={filteredHabitsSearch(searchTerm)} setHabits={setHabits} icons={icons} />
+                    <FilterHabits isSearching={searchTerm.trim() !== ""} filteredHabitsSearch={filteredHabitsSearch(searchTerm)} habits={filteredHabitsSearch(searchTerm)} setHabits={setHabits} icons={icons} />
                 </div>
             </div>
         </div>
