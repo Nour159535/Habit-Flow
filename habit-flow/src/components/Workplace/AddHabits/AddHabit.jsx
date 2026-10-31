@@ -24,6 +24,7 @@ function AddHabit({ habits, setHabits, icons }) {
 
     return (
         <div className="add-habit">
+            
             {habits.map((habit) => {
 
                 const selectedIcon = icons.find((icon) => {

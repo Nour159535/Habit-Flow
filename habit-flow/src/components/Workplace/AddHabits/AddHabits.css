@@ -85,3 +85,9 @@
   padding: 0px 12px 10px 12px;
   border-radius: 16px; 
 }
+.no-habits-message {
+  color: var(--heading-color);
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 500;
+}

@@ -17,9 +17,9 @@ function FilterHabits({habits, setHabits, icons}){
     return(
           <>
           <div className="filters-btn">
-            <button className={filter === 'All' ? 'active-btn' : 'filter-btn'} onClick={()=>{setFilter('All')}}>All ({totalHabits})</button>
+            <button className={filter === 'All'  ? 'active-btn' : 'filter-btn'} onClick={()=>{setFilter('All')}}>All ({totalHabits})</button>
             <button className={filter === 'Completed' ? 'active-btn' : 'filter-btn'} onClick={()=>{setFilter('Completed')}}>Completed ({completedCount})</button>
-            <button className={filter === 'Pending' ? 'active-btn' : 'filter-btn'} onClick={()=>{setFilter('Pending')}}>Pending ({pendingCount})</button>
+            <button className={filter === 'Pending'  ? 'active-btn' : 'filter-btn'} onClick={()=>{setFilter('Pending')}}>Pending ({pendingCount})</button>
           </div>
           <AddHabit habits={filteredHabits} setHabits={setHabits} icons={icons}/>
           </>

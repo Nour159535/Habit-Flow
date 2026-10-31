@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
 import './Workplace.css';
 import Welcome from './Welcome/Welcome';
@@ -13,7 +12,7 @@ import FilterHabits from './FilterHabits/FilterHabits';
 import HabitCalendar from './HabitCalendar/HabitCalendar';
 import TakeNote from './TakeNote/TakeNote';
 
-function Workplace() {
+function Workplace({habits, setHabits}) {
 
         const icons = [
         {
@@ -35,46 +34,7 @@ function Workplace() {
     ]
 
     const hour = dayjs().hour();
-    
-    const initialHabits = [
-        {
-            id: 1,
-            name: "Drink Water",
-            icon: '1',
-            type: "Health",
-            status: "Completed",
-            completedDates : ["2026-10-26"]
-        }, {
-            id: 2,
-            name: "Read 10 Pages",
-            icon: '2',
-            type: "Learning",
-            status: "Completed",
-            completedDates : ["2026-10-27"]
-        }, {
-            id: 3,
-            name: "Morning Stretch",
-            icon: '3',
-            type: "Fitness",
-            status: "Pending",
-            completedDates : ["2026-10-25"]
-        }
-    ];
 
-    const [habits, setHabits] = useState(()=>{
-        const savedHabits = localStorage.getItem("Habits");
-
-        if(savedHabits){
-            return JSON.parse(savedHabits);
-        }
-
-        return initialHabits;
-    });
-   
-    useEffect(()=>{
-        localStorage.setItem("Habits", JSON.stringify(habits))
-    }, [habits]);
-    
     return (
         <div className="workplace">
             <div className="welcome-date-container">
