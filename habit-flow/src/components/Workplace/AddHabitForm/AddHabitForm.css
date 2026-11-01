@@ -250,3 +250,31 @@
   font-weight: 500;
   margin: 0;
 }
+@media(max-width: 767px){
+  .modal-overlay{
+    z-index: 100000;
+  }
+  .modal-overlay .form {
+    width: 80%;
+  }
+  .form .habit-image button{
+    margin-top: 10px;
+  }
+  .filters-btn{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .add-habit-btn {
+    font-size: 14px;
+    padding: 10px 20px!important;
+  }
+
+  .add-habit-btn::before {
+    display: none;
+  }
+
+  .add-form-habit .habit-text p {
+    width: 80%;
+  }
+}

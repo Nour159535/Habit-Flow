@@ -166,6 +166,7 @@
     font-size: 11px;
     margin: 10px 0;
 }
+
 .success-rate {
     padding: 15px;
     background: #FFFEFB;
@@ -196,7 +197,7 @@
     margin: 0;
 }
 
-.success-p{
+.success-p {
     color: var(--btn-color);
     font-family: 'Inter';
     font-weight: 400;
@@ -207,5 +208,45 @@
 @media(max-width: 480px) {
     .progress-circle {
         width: 82px;
+    }
+}
+
+@media(max-width: 1399px) {
+    .streak-progress {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+
+    .streak-progress .today-progress {
+        width: 100%;
+    }
+
+    .current-streak,
+    .this-week,
+    .success-rate {
+        width: 100%;
+        height: 130px;
+        text-align: center;
+    }
+    .streak-icon,
+    .week-icon,
+    .success-icon {
+        flex-direction: column-reverse;
+    }
+    .streak-day {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 767px) {
+    .today-progress .compare-habits {
+        font-size: 18px;
+    }
+
+    .total-habit-achieve,
+    .streak-day p,
+    .success-achive {
+        font-size: 20px;
     }
 }

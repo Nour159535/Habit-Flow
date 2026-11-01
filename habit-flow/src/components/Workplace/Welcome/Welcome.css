@@ -31,6 +31,7 @@ margin-bottom: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   gap: 5px;
 }
 .date-notification p{
@@ -38,4 +39,15 @@ margin-bottom: 2px;
   font-size: 12px;
   font-weight: 400;
   font-family: 'Inter', sans-serif;
+}
+@media(max-width: 1399px){
+  .weclome{
+  text-align: center;
+  }
+.weclome h3{
+  font-size: 24px;
+  }
+  .date-notification {
+      margin-bottom: 20px;
+  }
 }

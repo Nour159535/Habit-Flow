@@ -1,4 +1,4 @@
-.add-habit{
+.add-habit {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -8,62 +8,72 @@
   padding: 20px;
   border: 1px solid #E3E6DD;
 }
-.add-habit .habit-container{
+
+.add-habit .habit-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-content: center;
   padding-bottom: 20px;
 }
-.add-habit .habit-container:not(:last-child){
-    border-bottom: 0.5px solid #E3E6DD;
+
+.add-habit .habit-container:not(:last-child) {
+  border-bottom: 0.5px solid #E3E6DD;
 }
-.habit-content{
+
+.habit-content {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   gap: 10px;
 }
-.habit-content .habit-texts h3{
+
+.habit-content .habit-texts h3 {
   color: var(--heading-color);
   font-family: 'Inter';
   font-size: 14px;
   font-weight: 400;
   margin: 0;
 }
-.habit-content .habit-span{
+
+.habit-content .habit-span {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   align-content: center;
   gap: 10px;
 }
-.habit-content .habit-span p, .habit-content .habit-span span{
+
+.habit-content .habit-span p,
+.habit-content .habit-span span {
   color: var(--paragraphs-color);
   font-size: 12px;
   font-family: 'Inter';
   font-weight: 400;
   margin: 8px 0;
 }
-.habit-status{
+
+.habit-status {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   gap: 5px;
 }
+
 .habit-status .status-btn {
-   color: var(--paragraphs-color);
-   font-size: 13px;
-   font-family: 'Inter';
-   font-weight: 400;
-   border: none;
-   cursor: pointer;
-   padding: 5px 12px;
-   border-radius: 16px;
+  color: var(--paragraphs-color);
+  font-size: 13px;
+  font-family: 'Inter';
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  padding: 5px 12px;
+  border-radius: 16px;
 }
-.habit-status .active{
+
+.habit-status .active {
   color: var(--heading-color);
   background: rgba(22, 131, 100, 0.3);
   font-size: 13px;
@@ -74,7 +84,8 @@
   padding: 5px 12px;
   border-radius: 16px;
 }
-.habit-status .edit-btn{
+
+.habit-status .edit-btn {
   color: var(--heading-color);
   background: transparent;
   font-size: 20px;
@@ -83,8 +94,9 @@
   border: none;
   cursor: pointer;
   padding: 0px 12px 10px 12px;
-  border-radius: 16px; 
+  border-radius: 16px;
 }
+
 .no-habits-message {
   color: var(--heading-color);
   font-family: 'Inter';

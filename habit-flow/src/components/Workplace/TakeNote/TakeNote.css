@@ -50,3 +50,8 @@
   font-size: 12px;
   color: var(--heading-color);
 }
+@media(max-width: 1399px) {
+  .note{
+    background-size: 20%;
+    background-position: 90% bottom;
+  } }

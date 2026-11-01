@@ -60,3 +60,42 @@
   justify-content: flex-end;
   align-content: flex-end;
 }
+
+@media (max-width: 1399px) {
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    z-index: 99999;
+    background: var(--bg-sidebar);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar-first-second-containers {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .first-container,
+  .second-container h3,
+  .third-container {
+    display: none;
+  }
+
+  .second-container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
