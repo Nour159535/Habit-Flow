@@ -78,6 +78,7 @@
   height: 100%;
   top: 0;
   left: 0;
+  z-index: 99999;
 }
 .modal-overlay .form{
   background: #1683645e;
@@ -267,7 +268,7 @@
   }
   .add-habit-btn {
     font-size: 14px;
-    padding: 10px 20px!important;
+    padding: 10px!important;
   }
 
   .add-habit-btn::before {
