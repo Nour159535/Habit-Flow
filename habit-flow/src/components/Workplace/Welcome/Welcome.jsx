@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 import './Welcome.css';
 
-function Welcome({ hour }) {
+function Welcome({ hour, theme, onToggleTheme }) {
     return (
         <>
             <div className="weclome">
@@ -18,12 +18,30 @@ function Welcome({ hour }) {
                     <p>{dayjs().format('dddd, MMMM D, YYYY')}</p>
                 </div>
 
-                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0.5" y="0.5" width="41" height="41" rx="20.5" fill="#FFFEFB" />
-                    <rect x="0.5" y="0.5" width="41" height="41" rx="20.5" stroke="#E3E6DD" />
-                    <path d="M19.6278 28.1256C19.7668 28.3663 19.9667 28.5662 20.2074 28.7052C20.4481 28.8441 20.7211 28.9173 20.999 28.9173C21.277 28.9173 21.55 28.8441 21.7907 28.7052C22.0314 28.5662 22.2313 28.3663 22.3702 28.1256M14.0818 23.6333C13.9784 23.7467 13.9102 23.8877 13.8854 24.0391C13.8606 24.1906 13.8804 24.3459 13.9423 24.4864C14.0042 24.6268 14.1055 24.7462 14.234 24.83C14.3626 24.9139 14.5127 24.9586 14.6661 24.9587H27.333C27.4865 24.9588 27.6366 24.9142 27.7652 24.8305C27.8938 24.7468 27.9953 24.6276 28.0573 24.4872C28.1194 24.3469 28.1394 24.1916 28.1148 24.0401C28.0902 23.8887 28.0221 23.7476 27.9189 23.6341C26.8659 22.5487 25.7497 21.3951 25.7497 17.8331C25.7497 16.5732 25.2492 15.3649 24.3584 14.4741C23.4676 13.5832 22.2594 13.0827 20.9996 13.0827C19.7398 13.0827 18.5316 13.5832 17.6407 14.4741C16.7499 15.3649 16.2495 16.5732 16.2495 17.8331C16.2495 21.3951 15.1324 22.5487 14.0818 23.6333Z" strokeWidth={1.6} strokeLinecap={"round"} stroke="#273C35" />
-                    <path d="M31.5 11.5C31.5 12.6046 30.6046 13.5 29.5 13.5C28.3954 13.5 27.5 12.6046 27.5 11.5C27.5 10.3954 28.3954 9.5 29.5 9.5C30.6046 9.5 31.5 10.3954 31.5 11.5Z" fill="#7964A4" stroke="#FFFEFB" />
-                </svg>
+                <button
+                    className="theme-toggle"
+                    onClick={onToggleTheme}
+                    aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+                    title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+                >
+                    {theme === 'light' ? (
+                        // Moon icon
+                        <svg width="50" height="50" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="0.5" width="41" height="41" rx="20.5" fill=" #FFFEFB"/>
+                            <rect x="0.5" y="0.5" width="41" height="41" rx="20.5" stroke="#E3E6DD"/>
+                            <path d="M23.6001 14C19.2001 12.6 14.6001 15.8 14.6001 20.5C14.6001 24.4 17.7001 27.5 21.6001 27.5C24.1001 27.5 26.4001 26.1 27.5001 23.9C24.2001 25.1 20.6001 22.7 20.6001 19.2C20.6001 17.1 21.7001 15.1 23.6001 14Z" strokeWidth={0.9} strokeLinecap={"round"} strokeLinejoin={"round"} stroke="#2B3530"/>
+                        </svg>
+
+                    ) : (
+                        // Sun icon
+                        <svg width="50" height="50" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="0.5" width="41" height="41" rx="20.5" fill="#171D18"/>
+                            <rect x="0.5" y="0.5" width="41" height="41" rx="20.5" stroke="#2B3530"/>
+                            <path d="M24 21C24 22.6569 22.6569 24 21 24C19.3431 24 18 22.6569 18 21C18 19.3431 19.3431 18 21 18C22.6569 18 24 19.3431 24 21Z" strokeWidth={1.2} stroke="#344B40"/>
+                            <path d="M21 13.5V15.5M21 26.5V28.5M13.5 21H15.5M26.5 21H28.5M15.7 15.7L17.1 17.1M24.9 24.9L26.3 26.3M15.7 26.3L17.1 24.9M24.9 17.1L26.3 15.7" strokeWidth={1.2} strokeLinecap={"round"} stroke="#BAC5B8"/>
+                        </svg>
+                    )}
+                </button>
             </div>
         </>
     );

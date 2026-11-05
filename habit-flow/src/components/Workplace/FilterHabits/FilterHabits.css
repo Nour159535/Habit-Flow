@@ -3,14 +3,14 @@
   gap: 10px;
   margin-top: 30px;
   padding: 10px 15px;
-  background: #EEEFE8;
+  background: var(--filter-habit-bg);
   width: max-content;
   border-radius: 8px;
 }
 .filter-btn{
   background: transparent;
   border: none;
-  color: var(--paragraphs-color);
+  color: var(--filter-habit-color);
   font-family: 'Inter';
   font-weight: 400;
   font-size: 14px;
@@ -19,8 +19,8 @@
   cursor: pointer;
 }
 .filter-btn:hover{
-  color: var(--heading-color);
-  background: #fff;
+  color: var(--filter-habit-color-active);
+  background: var(--filter-habit-bg-active);
   padding: 5px 10px;
   border-radius: 8px;
   border: none;
@@ -30,8 +30,8 @@
   transition: 0.3s ease-in-out;
 }
 .active-btn{
-  color: var(--heading-color);
-  background: #fff;
+  color: var(--filter-habit-color-active);
+  background: var(--filter-habit-bg-active);
   padding: 5px 10px;
   border-radius: 8px;
   border: none;

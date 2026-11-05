@@ -4,6 +4,7 @@ import Workplace from './components/Workplace/Workplace';
 import './App.css';
 import Habits from "./pages/Habits";
 import useLocalStorage from "./hooks/useLocalStorage";
+import useTheme from "./hooks/useTheme";
 
 function App() {
     const initialHabits = [
@@ -32,12 +33,13 @@ function App() {
     ];
 
     const [habits, setHabits] = useLocalStorage("habit-flow-habits", initialHabits);
+    const [theme, setTheme] = useTheme("habit-flow-theme", "light");
 
     return (
         <Routes>
             <Route element={<Layout />}>
-                <Route index element={<Workplace habits={habits} setHabits={setHabits} />} />
-                <Route path="habits" element={<Habits habits={habits} setHabits={setHabits} />} />
+                <Route index element={<Workplace habits={habits} setHabits={setHabits} theme={theme} setTheme={setTheme}/>} />
+                <Route path="habits" element={<Habits habits={habits} setHabits={setHabits} theme={theme} setTheme={setTheme}/>} />
             </Route>
         </Routes>
     )

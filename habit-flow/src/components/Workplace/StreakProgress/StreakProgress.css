@@ -11,7 +11,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
-    background: #EAF2EA;
+    background: var(--streak-daily-complete);
     padding: 20px;
     border-radius: 8px;
     width: 350px;
@@ -26,7 +26,7 @@
     display: grid;
     place-items: center;
     border-radius: 50%;
-    background: conic-gradient(#168364 var(--progress),
+    background: conic-gradient(var(--btn-color) var(--progress),
             #d2e2d6 var(--progress));
     position: relative;
 }
@@ -36,7 +36,7 @@
     position: absolute;
     inset: 6px;
     border-radius: 50%;
-    background: #eaf2eb;
+    background: var(--circle-progress);
 }
 
 .progress-circle .progress {
@@ -70,7 +70,7 @@
     font-size: 12px;
     font-weight: 400;
     font-family: 'Inter';
-    color: var(--btn-color);
+    color: var(--streak-short-tweak-color);
     margin: 0;
     line-height: 1.3em;
     width: 80%;
@@ -78,8 +78,8 @@
 
 .current-streak {
     padding: 15px;
-    background: #FFFEFB;
-    border: 1px solid #E3E6DD;
+    background: var(--other-streak-stats);
+    border: 1px solid var(--other-streak-border);
     border-radius: 8px;
     width: 220px;
     height: 120px;
@@ -107,7 +107,7 @@
 }
 
 .streak-day p {
-    color: var(--heading-color);
+    color: var(--current-success-color);
     font-family: 'Inter';
     font-weight: 700;
     font-size: 30px;
@@ -123,7 +123,7 @@
 }
 
 .current-streak .small-note {
-    color: var(--btn-color);
+    color: var(--current-success-p-color);
     font-family: 'Inter';
     font-weight: 400;
     font-size: 12px;
@@ -131,8 +131,8 @@
 
 .this-week {
     padding: 15px;
-    background: #FFFEFB;
-    border: 1px solid #E3E6DD;
+    background: var(--other-streak-stats);
+    border: 1px solid var(--other-streak-border);
     border-radius: 8px;
     width: 220px;
     height: 120px;
@@ -160,7 +160,7 @@
 }
 
 .habits-completed {
-    color: #7964A4;
+    color: var(--week-p-color);
     font-family: 'Inter';
     font-weight: 400;
     font-size: 11px;
@@ -169,8 +169,8 @@
 
 .success-rate {
     padding: 15px;
-    background: #FFFEFB;
-    border: 1px solid #E3E6DD;
+    background: var(--other-streak-stats);
+    border: 1px solid var(--other-streak-border);
     border-radius: 8px;
     width: 220px;
     height: 120px;
@@ -190,7 +190,7 @@
 }
 
 .success-achive {
-    color: var(--heading-color);
+    color: var(--current-success-color);
     font-family: 'Inter';
     font-weight: 700;
     font-size: 30px;
@@ -198,7 +198,7 @@
 }
 
 .success-p {
-    color: var(--btn-color);
+    color: var(--current-success-p-color);
     font-family: 'Inter';
     font-weight: 400;
     font-size: 11px;

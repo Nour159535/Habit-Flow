@@ -72,7 +72,7 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  background: #ffffff45;
+  background: var(--open-model-bg);
   backdrop-filter: blur(10px);
   width: 100%;
   height: 100%;
@@ -81,7 +81,7 @@
   z-index: 99999;
 }
 .modal-overlay .form{
-  background: #1683645e;
+  background: var(--form-bg)!important;
   padding: 20px;
   border-radius: 8px;
 }
@@ -124,7 +124,7 @@
   height: 40px;
   border-radius: 8px;
   border: none;
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--form-input-bg)!important;
   padding-left: 18px;
   color: var(--heading-color);
   font-size: 14px;
@@ -140,15 +140,15 @@
 .form .habit-image button{
   padding: 10px 30px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.4);
+  background: var(--form-icon-bg)!important;
   border: none;
-  outline: 1px solid #168364;
+  outline: 1px solid var(--form-icon-outline)!important;
   margin-right: 10px;
   cursor: pointer;
 }
 .form .habit-image .active-icon{
-  background: var(--btn-color);
-  outline: 1px solid var(--heading-color);
+  background: var(--form-icon-active)!important;
+  outline: 1px solid var(--form-icon-active)!important;
 }
 .form .habit-image button img{
   width: 40px;
@@ -178,7 +178,7 @@
     appearance: none;
     width: 20px;
     height: 20px;
-    border: 2px solid #168364;
+    border: 2px solid var(--form-icon-active)!important;
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
@@ -193,7 +193,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--radio-check-color)!important;
     transform: scale(0);
     transition: transform 0.15s ease-in-out;
     

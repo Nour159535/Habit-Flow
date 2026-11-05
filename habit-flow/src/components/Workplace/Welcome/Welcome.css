@@ -1,11 +1,12 @@
-.weclome .matters{
-font-size: 10px;
-font-weight: 600;
-font-family: 'Inter', sans-serif;
-color: var(--paragrapghs-color);
-margin-bottom: 2px;
+.weclome .matters {
+  font-size: 10px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  color: var(--paragraphs-color);
+  margin-bottom: 2px;
 }
-.weclome h3{
+
+.weclome h3 {
   font-size: 34px;
   font-family: 'Lora', sans-serif;
   font-weight: 400;
@@ -13,41 +14,65 @@ margin-bottom: 2px;
   line-height: 1.3em;
   margin: 0;
 }
-.weclome p{
+
+.weclome p {
   font-size: 13px;
   font-weight: 400;
   font-family: 'Inter', sans-serif;
-  color: var(--paragrapghs-color);
+  color: var(--paragraphs-color);
   margin: 4px;
 }
 
-.date-notification{
+.date-notification {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
-.date-notification .date{
+
+.date-notification .date {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   gap: 5px;
 }
-.date-notification p{
+
+.date-notification p {
   color: var(--heading-color);
   font-size: 12px;
   font-weight: 400;
   font-family: 'Inter', sans-serif;
 }
-@media(max-width: 1399px){
-  .weclome{
-  text-align: center;
+
+.theme-toggle {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background: var(--bg-sidebar);
+  color: var(--heading-color);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: rotate(15deg);
+}
+
+@media(max-width: 1399px) {
+  .weclome {
+    text-align: center;
   }
-.weclome h3{
-  font-size: 24px;
+
+  .weclome h3 {
+    font-size: 24px;
   }
+
   .date-notification {
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 }

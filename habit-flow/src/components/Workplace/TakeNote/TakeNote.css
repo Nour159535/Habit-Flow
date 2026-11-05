@@ -1,13 +1,13 @@
 .note{
   margin-top: 30px;
-  background: #F4F0FA;
+  background: var(--take-note-bg)!important;
   padding: 20px;
   border-radius: 8px;
   position: relative;
-  background-image: url('../../../assets/Light-mode/Botanical.svg');
-  background-size: 30%;
-  background-position: 95% bottom;
-  background-repeat: no-repeat;
+  background-image: url('../../../assets/Light-mode/Botanical.svg')!important;
+  background-size: 30%!important;
+  background-position: 95% bottom!important;
+  background-repeat: no-repeat!important;
 }
 
 .note .grow{

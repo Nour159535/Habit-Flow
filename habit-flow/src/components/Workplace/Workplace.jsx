@@ -12,7 +12,7 @@ import FilterHabits from './FilterHabits/FilterHabits';
 import HabitCalendar from './HabitCalendar/HabitCalendar';
 import TakeNote from './TakeNote/TakeNote';
 
-function Workplace({habits, setHabits}) {
+function Workplace({habits, setHabits, theme, setTheme}) {
 
         const icons = [
         {
@@ -34,6 +34,9 @@ function Workplace({habits, setHabits}) {
     ]
 
     const hour = dayjs().hour();
+    const onToggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+    };
 
     return (
         <div className="workplace">
@@ -47,7 +50,7 @@ function Workplace({habits, setHabits}) {
                </div>
             </div>
             <div className="welcome-date-container">
-                <Welcome hour={hour} />
+                <Welcome hour={hour} theme={theme} onToggleTheme={onToggleTheme}/>
             </div>
             <div className="daily-picture">
                 <div className="quick-stats">

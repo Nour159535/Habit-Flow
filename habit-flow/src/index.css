@@ -1,12 +1,102 @@
 :root{
+    /* Light Theme */
     --bg-color: #FAF9F5;
     --bg-sidebar: #F0F1E9;
     --heading-color: #273C35;
     --paragraphs-color: #78817A;
     --sec-color-text: #7964A4;
     --btn-color: #168364;
+    --list-item-color-hover: #EAE5F5;
+    --streak-daily-complete: #EAF2EA;
+    --circle-progress: #EAF2EA;
+    --other-streak-stats: #FFFEFB;
+    --other-streak-border: #E3E6DD;
+    --streak-short-tweak-color: #11674F;
+    --current-success-color: #273C35;
+    --current-success-p-color: #168364;
+    --week-p-color: #7964A4;
+    --filter-habit-bg: #EEEFE8;
+    --filter-habit-bg-active: #FFFEFB;
+    --filter-habit-color-active: #000;
+    --filter-habit-color: #78817A;
+    --add-habit-cards: #FFFEFB;
+    --add-habit-cards-border: #E3E6DD;
+    --no-habits-message: #273C35;
+    --stats-btn-bg: #F0F0F0;
+    --stats-btn-color: #78817A;
+    --open-model-bg: #ffffff45;
+    --form-bg: #1683649c;
+    --form-input-bg: rgba(255, 255, 255, 0.8);
+    --form-icon-bg: rgba(255, 255, 255, 0.4);
+    --form-icon-outline: #168364;
+    --form-icon-active: #168364;
+    --radio-check-color: #168364;
+    --habit-calendar: #FFFEFB;
+    --habit-calendar-border: #E3E6DD;
+    --habit-calendar-head-color: #273C35;
+    --habit-calendar-month-nav: #f5f2fa;
+    --habit-calendar-month-nav-hover: #6d3bd7;
+    --habit-calendar-month-nav-color: #6d3bd7;
+    --calendar-days-hover: #7964a438;
+    --week-day-span-calendar: #9993a8;
+    --calendar-days: #494257;
+    --calendar-habit-selected: #6d3bd7;
+    --activity-dot-color: #168364;
+    --today-activity-boder: #E3E6DD;
+    --today-color: #F4F0FA;
+    --take-note-bg: #F4F0FA;
+    --search-habit-bg: #EAF2EA;
+    
 }
-
+:root[data-theme="dark"] {
+    /* Dark Theme */
+    --bg-color: #171C1A;
+    --bg-sidebar: #202824;
+    --heading-color: #F0F2EF;
+    --paragraphs-color: #A7B0A9;
+    --sec-color-text: #B49AD9;
+    --btn-color: #35A987;
+    --list-item-color-hover: #171C1A;
+    --streak-daily-complete: #162D24;
+    --circle-progress: #162D24;
+    --other-streak-stats: #171D18;
+    --other-streak-border: #2B3530;
+    --streak-short-tweak-color: #A8D6C0;
+    --current-success-color: #E7ECE7;
+    --current-success-p-color: #8FA39D;
+    --week-p-color: #B8A7D6;
+    --filter-habit-bg: #2B3530;
+    --filter-habit-bg-active: #1F2B24;
+    --filter-habit-color-active: #fff;
+    --filter-habit-color: #8FA39D;
+    --add-habit-cards: #171D18;
+    --add-habit-cards-border: #2B3530;
+    --no-habits-message: #A7B0A9;
+    --stats-btn-bg: rgba(255, 255, 255, 0.1);
+    --stats-btn-color: #fff;
+    --open-model-bg: #44444488;
+    --form-bg: #030c095e;
+    --form-input-bg: #171D18;
+    --form-icon-bg: #171D18;
+    --form-icon-outline: #2B3530;
+    --form-icon-active: #162D24;
+    --radio-check-color: #fff;
+    --habit-calendar: #171D18;
+    --habit-calendar-border: #2B3530;
+    --habit-calendar-head-color: #E7ECE7;
+    --habit-calendar-month-nav: #2B3530;
+    --habit-calendar-month-nav-hover: #7964A4;
+    --habit-calendar-month-nav-color: #E7ECE7;
+    --week-day-span-calendar: #FFFFFF;
+    --calendar-days: #E7ECE7;
+    --calendar-days-hover: #7964a490;
+    --calendar-habit-selected: #B49AD9;
+    --activity-dot-color: #A8D6C0;
+    --today-activity-boder: #2B3530;
+    --today-color: #1F2B24;
+    --take-note-bg: #1F2B24;
+    --search-habit-bg: #2B3530;
+}
 body{
     padding: 0;
     margin: 0;

@@ -3,10 +3,10 @@
   flex-direction: column;
   gap: 20px;
   margin-top: 20px;
-  background: #FFFEFB;
+  background: var(--add-habit-cards);
   border-radius: 8px;
   padding: 20px;
-  border: 1px solid #E3E6DD;
+  border: 1px solid var(--add-habit-cards-border);
 }
 
 .add-habit .habit-container {
@@ -18,7 +18,7 @@
 }
 
 .add-habit .habit-container:not(:last-child) {
-  border-bottom: 0.5px solid #E3E6DD;
+  border-bottom: 0.5px solid var(--add-habit-cards-border);
 }
 
 .habit-content {
@@ -63,7 +63,8 @@
 }
 
 .habit-status .status-btn {
-  color: var(--paragraphs-color);
+  color: var(--stats-btn-color);
+  background: var(--stats-btn-bg);
   font-size: 13px;
   font-family: 'Inter';
   font-weight: 400;
@@ -98,7 +99,7 @@
 }
 
 .no-habits-message {
-  color: var(--heading-color);
+  color: var(--no-habits-message);
   font-family: 'Inter';
   font-size: 14px;
   font-weight: 500;

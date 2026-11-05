@@ -10,7 +10,7 @@ import habitIcon5 from '../assets/Light-mode/Habit-icon-5.svg';
 import { useState } from "react";
 import './Habits.css';
 
-function Habits({habits, setHabits}) {
+function Habits({habits, setHabits, theme, setTheme}) {
     const icons = [
         {
             id: '1',
@@ -46,11 +46,14 @@ function Habits({habits, setHabits}) {
         return searchHabits;
     }
     
-   
+    const onToggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+    };
+
     return (
         <div className="workplace">
             <div className="welcome-date-container">
-                <Welcome hour={hour} />
+                <Welcome hour={hour} theme={theme} onToggleTheme={onToggleTheme} />
             </div>
             <div className="add-habit-section">
                 <div className="habits-container">

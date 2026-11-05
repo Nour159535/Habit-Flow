@@ -2,11 +2,11 @@
   width: 100%;
   /* max-width: 380px; */
   padding: 24px;
-  background: #ffffff;
-  border: 1px solid #E3E6DD;
+  background: var(--habit-calendar);
+  border: 1px solid var(--habit-calendar-border);
   border-radius: 20px;
   box-shadow: 0 8px 28px rgba(42, 26, 74, 0.05);
-  color: #29243a;
+  color: var(--habit-calendar-head-color);
   font-family: inherit;
   box-sizing: border-box;
 }
@@ -37,8 +37,8 @@
   flex-shrink: 0;
   border: none;
   border-radius: 10px;
-  background: #f5f2fa;
-  color: #6d3bd7;
+  background: var(--habit-calendar-month-nav);
+  color: var(--habit-calendar-month-nav-color);
   font-size: 25px;
   line-height: 1;
   cursor: pointer;
@@ -46,7 +46,7 @@
 }
 
 .month-nav:hover {
-  background: #6d3bd7;
+  background: var(--habit-calendar-month-nav-hover);
   color: #ffffff;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .weekdays span {
-  color: #9993a8;
+  color: var(--week-day-span-calendar);
   font-size: 12px;
   font-weight: 600;
   font-family: 'Inter';
@@ -88,7 +88,7 @@
   border: 1px solid transparent;
   border-radius: 12px;
   background: transparent;
-  color: #494257;
+  color: var(--calendar-days);
   font: inherit;
   font-size: 13px;
   cursor: pointer;
@@ -97,7 +97,7 @@
 }
 
 .calendar-day:hover {
-  background: #f3eefc;
+  background: var(--calendar-days-hover);
 }
 
 .calendar-day.selected {
@@ -105,7 +105,7 @@
   justify-content: center!important;
   align-items: center!important;
   align-content: center!important;
-  background: #6d3bd7;
+  background: var(--calendar-habit-selected);
   color: #ffffff;
   box-shadow: 0 4px 10px rgba(109, 59, 215, 0.22);
 }
@@ -115,7 +115,7 @@
   height: 5px;
   flex-shrink: 0;
   border-radius: 50%;
-  background: #42bd8a;
+  background: var(--activity-dot-color);
 }
 
 .calendar-day.selected .activity-dot {
@@ -143,7 +143,7 @@
   align-content: center;
   margin-top: 40px;
   padding-top: 10px;
-  border-top: 1px solid #E3E6DD;
+  border-top: 1px solid var(--today-activity-boder);
 }
 .today-active-habit .habit-activity{
   font-size: 14px;
@@ -160,10 +160,10 @@
   top: -5px;
   font-weight: 400;
   font-size: 20px;
-  color: var(--btn-color);
+  color: var(--activity-dot-color);
 }
 .today-active-habit .today{
-   background: #F4F0FA;
+   background: var(--today-color);
    padding: 5px 10px;
    border-radius: 8px;
    color: var(--sec-color-text);
