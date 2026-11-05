@@ -147,8 +147,8 @@
   cursor: pointer;
 }
 .form .habit-image .active-icon{
-  background: var(--form-icon-active)!important;
-  outline: 1px solid var(--form-icon-active)!important;
+  background: var(--form-icon-active);
+  outline: 1px solid var(--form-icon-active);
 }
 .form .habit-image button img{
   width: 40px;
