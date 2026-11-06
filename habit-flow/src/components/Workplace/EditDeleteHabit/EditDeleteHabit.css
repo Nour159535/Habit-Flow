@@ -1,26 +1,30 @@
-.container-ref{
+.container-ref {
   position: relative;
 }
-.handle-key-down{
+
+.handle-key-down {
   position: absolute;
   top: 100%;
   right: 0;
   z-index: 9999;
-  background: #B9D9CD;
+  /* background: var(--edit-delete-habit) !important; */
   border-radius: 8px;
   width: max-content;
   margin-top: 10px;
 }
-.edit-delete-dropdown{
+
+.handle-key-down .edit-delete-dropdown {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 10px;
-  background: rgba(255, 255, 255, 0.4);
+  background: var(--edit-delete-habit-drodpdown) !important;
   padding: 20px;
+  border-radius: 8px;
 }
-.edit-delete-dropdown .handle-edit-btn{
+
+.edit-delete-dropdown .handle-edit-btn {
   background: var(--btn-color);
   padding: 5px 15px;
   border: none;
@@ -32,8 +36,9 @@
   width: 100%;
   cursor: pointer;
 }
-.edit-delete-dropdown .handle-toggle-btn{
-  background: var(--heading-color);
+
+.edit-delete-dropdown .handle-toggle-btn {
+  background: var(--change-status-btn);
   padding: 5px 15px;
   border: none;
   border-radius: 8px;
@@ -44,7 +49,8 @@
   width: 100%;
   cursor: pointer;
 }
-.edit-delete-dropdown .handle-delete-btn{
+
+.edit-delete-dropdown .handle-delete-btn {
   background: rgb(227, 64, 64);
   padding: 5px 15px;
   border: none;

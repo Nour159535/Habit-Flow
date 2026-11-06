@@ -46,7 +46,9 @@
     --today-color: #F4F0FA;
     --take-note-bg: #F4F0FA;
     --search-habit-bg: #EAF2EA;
-    
+    --edit-delete-habit: #B9D9CD;
+    --edit-delete-habit-drodpdown: #B9D9CD;
+    --change-status-btn: #273C35;
 }
 :root[data-theme="dark"] {
     /* Dark Theme */
@@ -96,6 +98,9 @@
     --today-color: #1F2B24;
     --take-note-bg: #1F2B24;
     --search-habit-bg: #2B3530;
+    --edit-delete-habit: #1F2B24;
+    --edit-delete-habit-drodpdown: #2A3930;
+    --change-status-btn: #1F2B24;
 }
 body{
     padding: 0;
