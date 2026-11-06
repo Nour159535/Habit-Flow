@@ -1,4 +1,4 @@
-:root{
+:root {
     /* Light Theme */
     --bg-color: #FAF9F5;
     --bg-sidebar: #F0F1E9;
@@ -50,6 +50,7 @@
     --edit-delete-habit-drodpdown: #B9D9CD;
     --change-status-btn: #273C35;
 }
+
 :root[data-theme="dark"] {
     /* Dark Theme */
     --bg-color: #171C1A;
@@ -102,7 +103,8 @@
     --edit-delete-habit-drodpdown: #2A3930;
     --change-status-btn: #1F2B24;
 }
-body{
+
+body {
     padding: 0;
     margin: 0;
     background: var(--bg-color);
